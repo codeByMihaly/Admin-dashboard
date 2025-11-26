@@ -5,6 +5,7 @@
 
 body {
     background-color: #cfdada75;
+
 }
 
 .container {
@@ -59,8 +60,9 @@ body {
 }
 
 .sidebar {
-    background-color: rgb(255, 255, 2);
+    background-color: rgb(94, 223, 255);
     grid-area: 1/1/5/2;
+    width: 14rem;
 }
 
 .upper-head {
@@ -77,7 +79,7 @@ input {
   background-color: #cfdada75;
   border: none;
   border-radius: 2em;
-  max-width: 30em;
+  max-width: 50em;
 }
 
 .profile {
@@ -100,7 +102,7 @@ input {
 
 .blocks {
   background-color: #FFFFFF;
-  font-size: max(0.8rem);
+  font-size: 0.8rem;
   padding: 1.5em 1em 2em;
   border-left: 0.4em solid orange;
   border-radius: 0.5em;
@@ -108,70 +110,80 @@ input {
 }
 
 .upper-sidebar {
-  margin: 1em;
+  margin: 2em;
 }
 
 .bottom-sidebar {
-  margin: 3em 1em 1em 1em;
+  margin: 3em 1em 1em 2em;
 }
 
 .dashboard {
   display: flex;
   margin: 0.5em 0.5em 2em 0;
+  gap: 1em;
 }
 
 .home {
   display: flex;
   margin-bottom: 0.5em; 
   padding-bottom: 0.25em;
+  gap: 1em;
 }
 
-.profile-sidebard {
+.profile-sidebar {
   display: flex;
   margin-bottom: 0.5em; 
   padding-bottom: 0.25em;
+  gap: 1em;
 }
 
 .messages {
   display: flex;
   margin-bottom: 0.5em; 
   padding-bottom: 0.25em;
+  gap: 1em;
 }
 
 .history {
   display: flex;
   margin-bottom: 0.5em; 
   padding-bottom: 0.25em;
+  gap: 1em;
 }
 
 .tasks {
   display: flex;
   margin-bottom: 0.5em; 
   padding-bottom: 0.25em;
+  gap: 1em;
 }
 
 .communities {
   display: flex;
   margin-bottom: 0.5em; 
   padding-bottom: 0.25em;
+  gap: 1em;
 }
 
 .settings {
   display: flex;
   margin-bottom: 0.5em; 
   padding-bottom: 0.25em;
+  gap: 1em;
 }
 
 .support {
   display: flex;
   margin-bottom: 0.5em; 
   padding-bottom: 0.25em;
+  gap: 1em;
 }
 
 .privacy {
   display: flex;
   margin-bottom: 0.5em; 
   padding-bottom: 0.25em;
+  gap: 1em;
 }
 
 .article-header2,
