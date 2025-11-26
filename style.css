@@ -1,47 +1,194 @@
 * {
     margin: 0;
+  
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
+    background-color: #cfdada75;
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(4, minmax(150px, 1fr));
-    grid-template-rows: repeat(4, minmax(150px, 1fr));
+    grid-template-columns: repeat(1, clamp(160px, 200px 1fr)) repeat(3, minmax(150px, 1fr));
+    grid-template-rows: repeat(1, minmax(50px, 0.5fr)) repeat(3, minmax(150px, 1fr));
+  
 }
 
 .header {
-    background-color: antiquewhite;
+    background-color: #FFFFFF;
     grid-area: 1/2/2/5;
+    height: 100%;
 }
 
 .main {
-    background-color: rgb(143, 120, 86);
-    grid-area: 2/2/5/4;
+  display: grid;
+  grid-area: 2/2/5/4;
+  grid-template-rows: repeat(1, minmax(150px, 1fr));
+  background-color: #cfdada75;
+}
+
+.block-system {
+    background-color: #cfdada75;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-template-rows: repeat(3, minmax(100px, 1fr));
+    gap: 1em;
+    margin: 3em 1em;
 }
 
 .article {
     display: grid;
-    grid-template-rows: repeat(2, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
     grid-area: 2/4/5/5;
+    background-color: #cfdada75;
+
 }
 
 .announcement {
-    background-color: rgb(54, 40, 131);
-
+    margin: 3em 1.5em 1.5em 0;
+    background-color: #FFFFFF;
+    border-radius: 0.5em;
+    padding: 1.5em;
 }
 
 .trending {
-    background-color: rgb(127, 255, 155);
-   
-    
+    margin: 1.5em 1.5em 3em 0;
+    background-color: #FFFFFF; 
+    border-radius: 0.5em;
+    padding: 1.5em;
 }
 
 .sidebar {
     background-color: rgb(255, 255, 2);
     grid-area: 1/1/5/2;
+}
+
+.upper-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headbar {
+  display: flex;
+  gap: 1em;
+}
+
+input {
+  background-color: #cfdada75;
+  border: none;
+  border-radius: 2em;
+  max-width: 30em;
+}
+
+.profile {
+  display: flex;
+  gap: 1em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcome {
+  display: flex;
+}
+
+#profile-icon2 {
+  display: flex;
+}
+
+.blocks {
+  background-color: #FFFFFF;
+  font-size: max(0.8rem);
+  padding: 1.5em 1em 2em;
+  border-left: 0.4em solid orange;
+  border-radius: 0.5em;
+ 
+}
+
+.upper-sidebar {
+  margin: 1em;
+}
+
+.bottom-sidebar {
+  margin: 3em 1em 1em 1em;
+}
+
+.dashboard {
+  display: flex;
+  margin: 0.5em 0.5em 2em 0;
+}
+
+.home {
+  display: flex;
+  margin-bottom: 0.5em; 
+  padding-bottom: 0.25em;
+}
+
+.profile-sidebard {
+  display: flex;
+  margin-bottom: 0.5em; 
+  padding-bottom: 0.25em;
+}
+
+.messages {
+  display: flex;
+  margin-bottom: 0.5em; 
+  padding-bottom: 0.25em;
+}
+
+.history {
+  display: flex;
+  margin-bottom: 0.5em; 
+  padding-bottom: 0.25em;
+}
+
+.tasks {
+  display: flex;
+  margin-bottom: 0.5em; 
+  padding-bottom: 0.25em;
+}
+
+.communities {
+  display: flex;
+  margin-bottom: 0.5em; 
+  padding-bottom: 0.25em;
+}
+
+.settings {
+  display: flex;
+  margin-bottom: 0.5em; 
+  padding-bottom: 0.25em;
+}
+
+.support {
+  display: flex;
+  margin-bottom: 0.5em; 
+  padding-bottom: 0.25em;
+}
+
+.privacy {
+  display: flex;
+  margin-bottom: 0.5em; 
+  padding-bottom: 0.25em;
+}
+
+.article-header2,
+.article-header3 {
+  border-top: 1px solid grey;
+  padding-top: 1em;
+}
+
+.announcement > p {
+  padding-bottom: 1em;
+}
+
+.first-row {
+  display: flex;
+}
+
+.first-item {
+  padding: 0.5em;
 }
 
