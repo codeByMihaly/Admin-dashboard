@@ -10,15 +10,15 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: clamp(160px, 200px 1fr)) repeat(3, minmax(150px, 1fr));
-    grid-template-rows: minmax(50px, 0.5fr)) repeat(4, minmax(150px, 1fr));
+    grid-template-columns: clamp(160px, 200px 1fr) repeat(3, minmax(150px, 1fr));
+    grid-template-rows: minmax(50px, 0.5fr) repeat(4, minmax(150px, 1fr));
     
 }
 
 .header {
     background-color: #FFFFFF;
     grid-area: 1/2/2/5;
-    height: 100%;
+
 }
 
 .headbar {
@@ -27,12 +27,17 @@ body {
   margin: 1em 1em 1em 2em; 
 }
 
+.mdi-magnify {
+  font-size: 1.5rem;
+  margin-top: 0.3em;
+}
+
 input {
   background-color: #cfdada75;
   border: none;
   border-radius: 2em;
   width: 35em;
-  height: 2em;
+  height: 1em;
   padding: 1em;
 }
 
@@ -40,6 +45,16 @@ input {
   display: flex;
   gap: 1em;
   margin: 1em 3em 1em 1em;
+}
+
+.mdi-bell-ring-outline {
+  font-size: 1.1rem;
+}
+
+.mdi-rabbit {
+  color: rgb(192, 137, 56);
+  font-size: 3rem;
+  margin-top: -0.2em;
 }
 
 #profile-name {
@@ -83,10 +98,11 @@ input {
   margin: 0 0.5em 0 1em;
   height: 2.5em;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .btn:hover{
-  
+
 }
 
 .btn:active {
@@ -96,8 +112,7 @@ input {
 
 .main {
   display: grid;
-  grid-area: 3/2/5/4;
-  grid-template-rows: minmax(150px, 1fr));
+  grid-area: 2/2/5/4;
   background-color: #cfdada75;
 }
 
@@ -115,7 +130,7 @@ input {
 .block-system {
   display: grid;
   grid-template-columns: repeat(2, minmax(100px, 1fr));
-  grid-auto-rows: repeat(3, minmax(150px, auto));
+  grid-auto-rows: repeat(2, minmax(150px, auto));
   gap: 1em;
   margin: 3em 1em;
 }
@@ -139,9 +154,15 @@ input {
   padding: 1em 1em 0 0;
 }
 
+.mdi-star-plus-outline,
+.mdi-eye-plus-outline,
+.mdi-progress-wrench {
+  font-size: 1.2rem;
+}
+
 .article {
     display: grid;
-    grid-template-rows: minmax(150px, 1fr));
+    grid-template-rows: minmax(150px, 1fr);
     grid-area: 2/4/5/5;
     background-color: #cfdada75;
 
@@ -190,6 +211,29 @@ input {
     padding: 1.5em;
 }
 
+.mdi-sticker-emoji,
+.mdi-emoticon-lol-outline,
+.mdi-emoticon-devil-outline,
+.mdi-emoticon-cool-outline {
+  font-size: 2rem;
+}
+
+.mdi-sticker-emoji{
+  color: rgb(199, 115, 129);
+}
+
+.mdi-emoticon-lol-outline {
+  color: rgb(70, 128, 65);
+}
+
+.mdi-emoticon-devil-outline {
+  color: rgb(223, 38, 69);
+}
+
+.mdi-emoticon-cool-outline {
+  color: rgb(154, 119, 250);
+}
+
 .first-row {
   display: flex;
 }
@@ -205,11 +249,15 @@ input {
 
 .sidebar {
     background-color: rgb(94, 223, 255);
-    grid-area: 1/1/6/2;
+    grid-area: 1/1/5/2;
     width: 14rem;
     color: white;
     font-weight: 700;
     font-size: 1.2rem
+}
+
+.mdi-view-dashboard-outline {
+  font-size: 2rem;
 }
 
 .upper-head {
@@ -218,16 +266,16 @@ input {
 }
 
 .upper-sidebar {
-  margin: 2em 1em 1em 1em;
+  margin: 2em 1em 1em 1.5em;
 }
 
 .bottom-sidebar {
-  margin: 3em 1em 1em 1em;
+  margin: 3em 1em 1em 1.5em;
 }
 
 .dashboard {
   display: flex;
-  margin: 0.5em 0.5em 2em 0;
+  margin: 0.5em 0em 2em 0;
   gap: 1em;
 }
 
