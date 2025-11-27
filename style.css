@@ -102,11 +102,11 @@ input {
 }
 
 .btn:hover{
-
+  color: orange;
 }
 
 .btn:active {
-  
+  background-color: rgb(94, 223, 255, 0.8);
 }
 
 
@@ -158,6 +158,19 @@ input {
 .mdi-eye-plus-outline,
 .mdi-progress-wrench {
   font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.mdi-star-plus-outline:hover,
+.mdi-eye-plus-outline:hover,
+.mdi-progress-wrench:hover {
+  color: orange;
+}
+
+.mdi-star-plus-outline:active,
+.mdi-eye-plus-outline:active,
+.mdi-progress-wrench:active {
+  color: rgb(255, 166, 0, 0.7);
 }
 
 .article {
@@ -277,6 +290,7 @@ input {
   display: flex;
   margin: 0.5em 0em 2em 0;
   gap: 1em;
+  cursor: pointer;
 }
 
 .home {
@@ -284,6 +298,7 @@ input {
   margin-bottom: 0.5em; 
   padding-bottom: 0.25em;
   gap: 1em;
+  cursor: pointer;
 }
 
 .profile-sidebar {
@@ -291,6 +306,7 @@ input {
   margin-bottom: 0.5em; 
   padding-bottom: 0.25em;
   gap: 1em;
+  cursor: pointer;
 }
 
 .messages {
@@ -298,6 +314,7 @@ input {
   margin-bottom: 0.5em; 
   padding-bottom: 0.25em;
   gap: 1em;
+  cursor: pointer;
 }
 
 .history {
@@ -305,6 +322,7 @@ input {
   margin-bottom: 0.5em; 
   padding-bottom: 0.25em;
   gap: 1em;
+  cursor: pointer;
 }
 
 .tasks {
@@ -312,6 +330,7 @@ input {
   margin-bottom: 0.5em; 
   padding-bottom: 0.25em;
   gap: 1em;
+  cursor: pointer;
 }
 
 .communities {
@@ -319,6 +338,7 @@ input {
   margin-bottom: 0.5em; 
   padding-bottom: 0.25em;
   gap: 1em;
+  cursor: pointer;
 }
 
 .settings {
@@ -326,6 +346,7 @@ input {
   margin-bottom: 0.5em; 
   padding-bottom: 0.25em;
   gap: 1em;
+  cursor: pointer;
 }
 
 .support {
@@ -333,6 +354,7 @@ input {
   margin-bottom: 0.5em; 
   padding-bottom: 0.25em;
   gap: 1em;
+  cursor: pointer;
 }
 
 .privacy {
@@ -340,4 +362,31 @@ input {
   margin-bottom: 0.5em; 
   padding-bottom: 0.25em;
   gap: 1em;
+  cursor: pointer;
+}
+
+.dashboard:hover, 
+.home:hover, 
+.profile-sidebar:hover, 
+.messages:hover, 
+.history:hover, 
+.tasks:hover, 
+.communities:hover, 
+.settings:hover, 
+.support:hover, 
+.privacy:hover {
+  color: orange
+}
+
+.dashboard:active, 
+.home:active,
+.profile-sidebar:active,  
+.messages:active, 
+.history:active, 
+.tasks:active, 
+.communities:active, 
+.settings:active, 
+.support:active, 
+.privacy:active {
+  color: rgb(255, 165, 0, 0.4)
 }
